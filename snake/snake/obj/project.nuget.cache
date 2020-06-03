@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hS9hBdqayJhA7FdqzEkpTOVO0R+lI93yG8Gj8OKnxIwGgbVcJxyyeqMcSyyy+OcbG5zRgqv1ps/4K9qWHDcM/g==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\snake.git\\snake\\snake\\snake.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anatoliy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
