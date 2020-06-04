@@ -9,7 +9,7 @@ namespace snake
 {
     class Snake : Figura
     {
-        public Direction direction;
+        Direction direction;
 
         public Snake(Point tail, int lenght, Direction _direction)
         {
@@ -27,14 +27,14 @@ namespace snake
         {
             Point tail = pList.First();
             pList.Remove(tail);
-            Point head = GetNexPoint();
+            Point head = GetNextPoint();
             pList.Add(head);
 
             tail.Clear();
             head.Draw();
         }
 
-        public Point GetNexPoint() 
+        public Point GetNextPoint() 
         {
             Point head = pList.Last();
             Point nextPoint = new Point(head);
@@ -50,6 +50,18 @@ namespace snake
                 case ConsoleKey.UpArrow: direction = Direction.UP; break;
                 case ConsoleKey.DownArrow: direction = Direction.DOWN; break;
             }
+        }
+
+        internal bool Eat( Point food)
+        {
+            Point head = GetNextPoint();
+            if (head.IsHit(food))
+            {
+                food.sym = head.sym;
+                pList.Add(food);
+                return true;
+            }
+            else return false;
         }
     }
 }
