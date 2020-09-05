@@ -38,6 +38,7 @@ namespace snake
                 else
                 {
                     snake.Move();
+
                 }
 
                 Thread.Sleep(100);
