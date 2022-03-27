@@ -24,6 +24,12 @@ namespace snake
             sym = p.sym;
         }
 
+        public Point(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
         public void Move(int offset, Direction direction) 
         {
             switch (direction)
